@@ -1,0 +1,63 @@
+
+
+<html>
+<style>
+body {
+   font-family: sans-serif;
+   font-size: 18px;
+}
+
+header {
+   border-bottom: 1px solid #999;
+   margin-bottom: 2rem;
+   display: flex;
+}
+header h1 a {
+   color: red;
+   text-decoration: none;
+}
+
+.nav-left {
+   margin-right: auto;
+}
+
+.nav-right {
+   display: flex;
+   padding-top: 2rem;
+}
+
+.post-entry {
+   margin-bottom: 2rem;
+}
+
+.post-entry h2 {
+   margin: 0.5rem 0;
+}
+.post-entry h3 {
+   color: purple;
+}
+
+.post-entry p {
+   margin: 0;
+   font-weight: 350;
+}
+
+</style>
+   <head>
+      <title>Blog</title>
+   </head>
+   <body>
+      <header>
+      <div class="nav-left">
+         <h1><a href="{% url 'home' %}">Blog</a></h1>
+      </div>
+      <div class="nav-right">
+         <a href="{% url 'post_new' %}">Post</a>
+      </div>
+      </header>
+      <div>  
+         {% block content %}
+         {% endblock content %}
+      </div>
+   </body>
+</html>

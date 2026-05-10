@@ -1,0 +1,44 @@
+you will not be able to edit your posts because I think you should think before
+you create something. Although you can delete stuff, editing is buns. its not 
+because i'm lazy, its a feature. i gotta get into college, and the best way
+is by exposing random students' digital footprint on a tiny makeshift blog post site
+because im petty, but most of tj is anyway
+
+anyway
+
+im done, thats my arguments
+
+and i hate static directories so i shoved my css into my base.html file like a real
+web dev
+
+and btw
+
+i use arch :)
+
+visual goonio code < neovim < vim < vi < nano < ed
+
+
+
+update: you guys aint gonna delete anything on my watch, I HAVE ALL THE POWER
+
+CRUD is for CHUD
+
+all you need is your creativity :)
+
+crud is now cr
+
+because all you need is a pen and a reputation :)
+
+why am i saying corny stuff on an assignment?
+idk, im tired at an airport and accidentally rm -rf ed my project :(
+
+btw i did have it editable and deleteable but i tried to zip it so i could put it on my drive, but i did rm * .gz and removed everything
+
+simplicity is what i need right now, and maybe an energy drink
+
+i found the book for free (accidentally i swear) and its a huge help, theres a lot of stuff on this specific assignment, im writing
+this before oauth, so hopefully i do not speak too soon
+
+anyway if you got this far im sorry
+
+yap sesh over

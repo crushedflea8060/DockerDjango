@@ -1,0 +1,4 @@
+gunicorn
+django
+python-dotenv
+requests
