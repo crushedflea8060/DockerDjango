@@ -87,13 +87,12 @@ CELERY_BROKER_URL = 'redis://redis:6379/0'
 CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
-from celery.schedules import crontab
-
-CELERY_BEAT_SCHEDULE = {'update-blog-timestamps':{
-'task': 'blog.tasks.update_blog_post_timestamp',
-'schedule': crontab()}
+CELERY_BEAT_SCHEDULE = {
+    "update-posts": {
+        "task": "blog.tasks.update_blog_post_timestamp",
+        "schedule": 60.0,
+    }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 

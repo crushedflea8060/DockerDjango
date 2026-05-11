@@ -9,13 +9,19 @@ services:
       - redis
     ports:
       - "80:80"
+    volumes:
+      - ./db.sqlite3:/app/db.sqlite3 
   celery_worker:
     build: .
     command: celery -A blog_project worker -l info
     depends_on:
       - redis
+    volumes:
+      - ./db.sqlite3:/app/db.sqlite3 
   celery_beat:
     build: .
     command: celery -A blog_project beat -l info
+    volumes:
+      - ./db.sqlite3:/app/db.sqlite3 
     depends_on:
       - redis
