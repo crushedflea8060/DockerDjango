@@ -91,7 +91,7 @@ from celery.schedules import crontab
 
 CELERY_BEAT_SCHEDULE = {'update-blog-timestamps':{
 'task': 'blog.tasks.update_blog_post_timestamp',
-'schedule': crontab(minute=0)}
+'schedule': crontab()}
 }
 
 # Password validation
