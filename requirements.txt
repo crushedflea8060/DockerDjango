@@ -3,3 +3,6 @@ django
 python-dotenv
 requests
 django-celery-beat
+celery
+redis
+celery[redis]

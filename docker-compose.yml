@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:7-alpine
+  web:
+    build: .
+    command: gunicorn -b 0.0.0.0:80 blog_project.wsgi
+    depends_on:
+      - redis
+    ports:
+      - "80:80"
+  celery_worker:
+    build: .
+    command: celery -A blog_project worker -l info
+    depends_on:
+      - redis
+  celery_beat:
+    build: .
+    command: celery -A blog_project beat -l info
+    depends_on:
+      - redis

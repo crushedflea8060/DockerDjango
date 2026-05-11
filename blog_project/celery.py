@@ -11,6 +11,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
    'update-blog-timestamps': {
       'task': 'your_app.tasks.update_blog_post_timestamp',
-      'schedule': crontab(minute=0),
+      'schedule': crontab(),
    },
 }

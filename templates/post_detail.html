@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
-
+{% load tz %}
 {% block content %}
    <div class="post-entry">
       <h2>{{object.title}}</h2>
+      <h3>{{object.time|localtime}}</h2>
       <h3>Author: {{object.author}}</h3>
       <p> {{object.body}} </p>
    </div>

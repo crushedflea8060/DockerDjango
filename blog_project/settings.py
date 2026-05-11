@@ -83,8 +83,8 @@ DATABASES = {
 }
 
 #Celery
-CELERY_BROKER_URL = 'redis://localhost:6379'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_BROKER_URL = 'redis://redis:6379/0'
+CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 from celery.schedules import crontab
@@ -118,7 +118,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#this was way too annoying for no reason#
+TIME_ZONE = "America/New_York"
 
 USE_I18N = True
 
